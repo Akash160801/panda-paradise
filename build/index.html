@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda Paradise</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/winking.ico" />
+    <script src="js/main.js" defer></script>
+    <!-- defer tells the javascript to load after the document has been loaded. -->
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-white via-teal-200 to-white">
+    <!-- HEADER -->
+
+    <header class="bg-teal-600 text-white sticky top-0 z-10">
+      <section class="flex justify-between items-center p-4 mx-auto max-w-4xl">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">🐼 Panda Paradise</a>
+        </h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="text-3xl cursor-pointer md:hidden relative h-8 w-8"
+          >
+            <!-- &#9776 -->
+            <div
+              class="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"
+            ></div>
+          </button>
+          <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+            <a href="#gallery" class="hover:opacity-90">Panda Gallery</a>
+            <a href="#facts" class="hover:opacity-90">Panda Facts</a>
+            <a href="#contact" class="hover:opacity-90">Contact Us</a>
+          </nav>
+        </div>
+      </section>
+      <section
+        id="mobile-menu"
+        class="absolute top-[68px] text-slate-100 bg-teal-950 w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden"
+      >
+        <!-- <button class="text-8xl self-end px-6">
+          &times;
+        </button> -->
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-80"
+            >Home</a
+          >
+          <a href="#gallery" class="w-full text-center py-6 hover:opacity-80"
+            >Gallery</a
+          >
+          <a href="#facts" class="w-full text-center py-6 hover:opacity-80"
+            >Facts</a
+          >
+          <a href="#contact" class="w-full text-center py-6 hover:opacity-80"
+            >Contact</a
+          >
+          <a href="#footer" class="w-full text-center py-6 hover:opacity-80"
+            >Footer</a
+          >
+        </nav>
+      </section>
+    </header>
+
+    <main class="max-w-4xl mx-auto">
+      <section
+        id="hero"
+        class="scroll-mt-40 flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-4xl font-bold text-center sm:text-left sm:text-5xl text-slate-900 capitalize"
+          >
+            Embark on a Captivating Journey into
+            <span class="text-teal-700">Panda Paradise...</span>
+          </h2>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700"
+          >
+            Where Playful Cubs, Bamboo Dreams, and Endless Cuteness Await Your
+            Discovery.
+          </p>
+          <p
+            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700"
+          >
+            Dive into the Panda Paradise.
+          </p>
+        </article>
+        <img class="w-1/2" src="./img/panda-hero.png" alt="rocketdab" />
+      </section>
+      <hr class="mx-auto bg-black w-1/2 h-[3px]" />
+
+      <!-- PANDA GALLERY -->
+
+      <section
+        id="gallery"
+        class="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900"
+        >
+          Panda Gallery
+        </h2>
+        <ul
+          class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"
+        >
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-[#2ADEDF] py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img src="./img/panda9.png" alt="Explorer" class="w-full" />
+            <h3 class="text-3xl text-center text-slate-900">Bamboo Baby</h3>
+            <p class="hidden sm:block mt-2 text-2xl text-center text-slate-600">
+              🐼🐼
+            </p>
+            <p class="sm:hidden mt-2 text-2xl text-center text-slate-600">
+              Nature's Cuddle Companion
+            </p>
+          </li>
+
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-[#FFCC81] py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img src="./img/panda3.png" alt="Adventure" class="w-full" />
+            <h3 class="text-3xl text-center text-slate-900">SipSip Panda</h3>
+            <p class="hidden sm:block mt-2 text-2xl text-center text-slate-600">
+              🐼🐼🐼
+            </p>
+            <p class="sm:hidden mt-2 text-2xl text-center text-slate-600">
+              Slice Savvy Sipper!
+            </p>
+          </li>
+
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-[#FCA7F2] py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img src="./img/panda11.png" alt="Infinity" class="w-full" />
+            <h3 class="text-3xl text-center text-slate-900">Sleepy Panda</h3>
+            <p class="hidden sm:block mt-2 text-2xl text-center text-slate-600">
+              🐼🐼
+            </p>
+            <p class="sm:hidden mt-2 text-2xl text-center text-slate-600">
+              Dreamy Nap Explorer
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 bg-[#0BCAFE] py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img src="./img/panda4.png" alt="Infinity" class="w-full" />
+            <h3 class="text-3xl text-center text-slate-900">
+              Pizzalicious Panda
+            </h3>
+            <p class="hidden sm:block mt-2 text-2xl text-center text-slate-600">
+              🐼🐼🐼🐼
+            </p>
+            <p class="sm:hidden mt-2 text-2xl text-center text-slate-600">
+              Pizza-Paws Muncher
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="mx-auto bg-black w-1/2 h-[2px]" />
+
+      <!-- PANDA FACTS -->
+
+      <section
+        id="facts"
+        class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900"
+        >
+          Panda Facts
+        </h2>
+        <figure class="my-12">
+          <blockquote class="bg-teal-600 pl-14 pr-8 py-12 rounded-3xl relative">
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              Pandas primarily feed on bamboo, with about 99% of their diet
+              consisting of this plant. Despite being a member of the bear
+              family, their digestive system is more adapted to a herbivorous
+              diet.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500"
+          >
+            &#8212;Bamboo Diet
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote class="bg-teal-600 pl-14 pr-8 py-12 rounded-3xl relative">
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              Pandas have a specialized
+              <span class="italic">wrist bone that acts like a thumb</span>
+              , allowing them to hold bamboo stems and manipulate their food
+              effectively.
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500"
+          >
+            &#8212;Thumb-like Adaptation
+          </figcaption>
+        </figure>
+        <figure class="my-12">
+          <blockquote class="bg-teal-600 pl-14 pr-8 py-12 rounded-3xl relative">
+            <p
+              class="text-2xl sm:text-3xl text-left mt-2 text-white before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+            >
+              Despite their large size, &#8212;
+              <span class="italic">pandas are skilled climbers.</span>&#8212;
+              They can scale trees and cliffs when necessary,
+              <q class="italic"
+                >although they spend most of their time on the ground.
+              </q>
+            </p>
+          </blockquote>
+          <figcaption
+            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500"
+          >
+            &#8212;Excellent Climbers
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr class="mx-auto bg-black w-1/2 h-[3px]" />
+
+      <!--  CONTACT US -->
+
+      <section
+        id="contact"
+        class="p-6 my-12 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
+      >
+        <h2
+          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900"
+        >
+          Contact Us
+        </h2>
+        <form
+          action=""
+          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+        >
+          <label for="subject">Subject:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            minlength="3"
+            maxlength="60"
+            placeholder="Your subject"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900"
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900"
+          ></textarea>
+          <button
+            class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer id="footer" class="bg-teal-700 text-white text-xl">
+      <section
+        class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>456 Fluffy Lane</h2>
+          Bearville, BR 54321 <br />
+          Munchington, Munchyville<br />
+          Email:
+          <a href="mailto:inquiries@acmerockets.com"
+            >inquiries@pandaparadise.com</a
+          ><br />
+          Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+        </address>
+        <nav class="hidden sm:flex flex-col gap-2" aria-label="footer">
+          <a href="#gallery" class="hover:opacity-90">Gallery</a>
+          <a href="#facts" class="hover:opacity-90">Facts</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+        <div class="flex flex-col sm:gap-2">
+          <p class="text-right">Copyright &copy; <span id="year">2023</span></p>
+          <p class="text-right">All rights reserved</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
